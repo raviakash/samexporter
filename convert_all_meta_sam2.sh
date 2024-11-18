@@ -23,3 +23,11 @@ python -m samexporter.export_sam2 --checkpoint original_models/sam2_hiera_large.
     --output_encoder output_models/sam2_hiera_large.encoder.onnx \
     --output_decoder output_models/sam2_hiera_large.decoder.onnx \
     --model_type sam2_hiera_large
+
+echo "Converting SAM2-Hiera-custom models..."
+python -m samexporter.export_sam2 --checkpoint original_models/sam2_hiera_custom.pt \
+    --output_encoder output_models/sam2_hiera_custom.encoder.onnx \
+    --output_decoder output_models/sam2_hiera_custom.decoder.onnx \
+    --model_type sam2_hiera_custom
+
+

@@ -198,6 +198,8 @@ if __name__ == "__main__":
         model_cfg = "sam2_hiera_s.yaml"
     elif model_type == "sam2_hiera_base_plus":
         model_cfg = "sam2_hiera_b+.yaml"
+    elif model_type == "sam2_hiera_custom":
+        model_cfg = "sam2_hiera_t.yaml"
     else:
         model_cfg = "sam2_hiera_l.yaml"
 
